@@ -12,10 +12,11 @@ const Login = () => {
         title="Next"
         color={'blue'}
         onPress={() => {
-          navigate('FORM',{
+          // in this case we needed to pass parameter to a nested stack
+          navigate('FORM', {
             screen: 'APPLICATION_FORM',
             params: {
-              username: 'Mohammad'
+              username: 'Mohammad',
             },
           });
         }}></Button>

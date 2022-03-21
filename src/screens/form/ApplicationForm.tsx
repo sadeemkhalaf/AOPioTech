@@ -2,10 +2,8 @@ import {View, Text, Button} from 'react-native';
 import React, {useEffect} from 'react';
 import {container} from '../Welcome';
 import {
-  StackActions,
   useNavigation,
   useRoute,
-  CommonActions,
 } from '@react-navigation/native';
 
 const ApplicationForm = () => {

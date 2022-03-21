@@ -1,12 +1,9 @@
-import React, {useEffect, useRef} from 'react';
+import React from 'react';
 import {
-  createNavigationContainerRef,
   NavigationContainer,
 } from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import Welcome from './screens/Welcome';
-import {BackHandler, useColorScheme} from 'react-native';
-import {Colors} from 'react-native/Libraries/NewAppScreen';
 import Login from './screens/Login';
 import ApplicationForm from './screens/form/ApplicationForm';
 import Results from './screens/Results';

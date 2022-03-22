@@ -17,6 +17,7 @@ const ApplicationForm = () => {
   return (
     <View style={container}>
       <Text>ApplicationForm</Text>
+     {params && <Text>{params?.email}</Text>}
       <Button
         title="Finish"
         color={'blue'}

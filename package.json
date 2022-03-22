@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
+    "8": "npx react-native run-ios --simulator='iPhone 8'",
+    "11": "npx react-native run-ios --simulator='iPhone 11'",
+    "13": "npx react-native run-ios --simulator='iPhone 13'",
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "ios:pods": "cd ios; npx pod install; cd .. ",
@@ -13,7 +16,9 @@
   "dependencies": {
     "@react-navigation/native": "^6.0.8",
     "@react-navigation/native-stack": "^6.5.0",
+    "formik": "^2.2.9",
     "react": "17.0.2",
+    "react-hook-form": "^7.28.1",
     "react-native": "0.67.4",
     "react-native-safe-area-context": "^4.2.1",
     "react-native-screens": "^3.13.1"

@@ -15,19 +15,19 @@ export const APPLICATION_FORM = 'APPLICATION_FORM';
 export const RESULTS = 'RESULTS';
 
 //main stack
-const Stack = createNativeStackNavigator<AppStackType>();
 export type AppStackType = {
   [WELCOME]: undefined;
   [LOGIN]: undefined;
-  [FORM]: {username: string};
+  [FORM]: {username?: string};
 };
-
-// sub-stack
-const FormStack = createNativeStackNavigator<FormStackType>();
 export type FormStackType = {
-  [APPLICATION_FORM]: undefined;
+  [APPLICATION_FORM]: {username?: string};
   [RESULTS]: undefined;
 };
+
+const Stack = createNativeStackNavigator<AppStackType>();
+// sub-stack
+const FormStack = createNativeStackNavigator<FormStackType>();
 
 const FormStackNavigation = () => {
   return (
